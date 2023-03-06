@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="swapView">
+
+    <ImageView
+        android:id="@+id/iv_sky"
+        android:layout_width="wrap_content"
+        android:layout_height="223dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sky" />
+
+    <TextView
+        android:id="@+id/tv_headLine"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Life and nature are similar concepts because nature is the study of how life acts and interacts within the circle of existence. When we take the time to examine the beauty of the world around us, we are able to see parallels within our own lives. One who is attuned with nature is attuned with the practice of living. All of nature moves in a spiral as do our personal lives. It is important to spend time in nature because in this way we can become attuned to its wisdom. On the other hand, when we ignore the beauty of nature and spend our time in an urban jungle our stress levels go up and we begin to feel as if we are made out of the concrete that we see all around us."
+        app:layout_constraintEnd_toStartOf="@+id/iv_doggy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_sky" />
+
+    <ImageView
+        android:id="@+id/iv_doggy"
+        android:layout_width="145dp"
+        android:layout_height="105dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_sky"
+        app:srcCompat="@drawable/doggy" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
